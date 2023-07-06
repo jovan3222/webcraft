@@ -1,0 +1,122 @@
+@media only screen and (max-width:480px) {
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        width: 1440px;
+        height: 2600px;
+        background: url('./img8.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: none;
+    }
+
+    .hero-info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 420px 520px 0px 560px;
+    }
+
+    .hero-s-h2 {
+        font-size: calc(200rem/16);
+        line-height: 1.1;
+        width: 1200px;
+        color: #1c1c1c;
+        margin-bottom: -10px;
+    }
+
+    .type-effect {
+        font-size: calc(200rem/16);
+        margin-bottom: 60px;
+        width: 1200px;
+        color: #11a4fa;
+        overflow: hidden;
+        /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid #38b6ff;
+        /* The typwriter cursor */
+        white-space: nowrap;
+        /* Keeps the content on a single line */
+        animation:
+            typing 2s steps(40, end),
+            blink-caret .75s step-end infinite;
+    }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+    
+            to {
+                width: 1200px
+            }
+        }
+    
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+    
+            from,
+            to {
+                border-color: transparent
+            }
+    
+            50% {
+                border-color: #1c1c1c;
+            }
+        }
+
+        .hero-s-p {
+            width: 970px;
+            margin: 50px 0 0px -50px;
+            font-size: calc(75rem/16);
+            text-align: center;
+        }
+
+        .hero-btns-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 170px 0 0 -450px;
+        }
+
+        .hero-btns-container a {
+            width: 90px;
+            margin-right: 20px;
+        }
+
+        .hero-s-btn1 {
+            display: flex;
+            font-family: 'Outfit', sans-serif;
+            background-color: white;
+            width: 470px;
+            height: 140px;
+            margin-left: 45px;
+            margin-bottom: 70px;
+            color: #1c1c1c;
+            font-size: calc(68rem/16);
+            border: 1px solid #1c1c1c;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            border-radius: 3px;
+            transition: .5s;
+            border-radius: 70px;
+        }
+
+        .hero-s-btn2 {
+            font-family: 'Outfit', sans-serif;
+            margin-left: -60px;
+            width: 700px;
+            height: 140px;
+            color: #2789c2;
+            font-size: calc(68rem/16);
+            cursor: pointer;
+            border-radius: 3px;
+            background: linear-gradient(to right, #1c1c1c 50%, white 50%);
+            background-size: 200% 100%;
+            background-position: right bottom;
+            transition: all .5s ease-out;
+            border: 1px solid #1c1c1c;
+            padding: 0;
+            border-radius: 70px;
+        }
+}

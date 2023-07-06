@@ -1,0 +1,73 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    height: 80px;
+    align-items: center;
+    border-bottom: 2px solid lightgray;
+    position: fixed;
+    top: 0px;
+    background-color: white;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 29px;
+    margin-left: 150px;
+}
+
+.web-blue {
+    color: #11a4fa;
+}
+
+.craft-black {
+    color: #1c1c1c;
+    overflow: hidden;
+    background: linear-gradient(to right, #11a4fa, #11a4fa 50%, #1c1c1c 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 475ms ease;
+    text-decoration: none;
+    &:hover {
+      background-position: 0 100%;
+    }
+  }
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin-right: 150px;
+}
+
+/* .navbar ul li {
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 20px 0 20px;
+    overflow: hidden;
+    background: linear-gradient(to right, red, red 50%, #1c1c1c 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 175ms ease;
+    text-decoration: none;
+    &:hover {
+      background-position: 0 100%;
+    }
+  } */
+
+.navbar ul li {
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 20px 0 20px;
+    transition: .3s;
+}
+
+.navbar ul li:hover {
+    color: #2789c2;
+    margin-top: -3px;
+}

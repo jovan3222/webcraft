@@ -1,0 +1,118 @@
+main {
+    width: 1440px;
+    height: 4000px;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1440px;
+    height: 650px;
+    background: url('./img8.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.services-section {
+    width: 1440px;
+    height: 500px;
+    background-color: lightblue;
+}
+
+.hero-info-container {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 520px 0px 0px;
+}
+
+.hero-s-h2 {
+    font-size: calc(70rem/16);
+    line-height: 1.1;
+    width: 500px;
+    color: #1c1c1c;  
+    margin-bottom: -10px;
+}
+
+.type-effect {
+    font-size: calc(70rem/16);
+    margin-bottom: 10px;
+    width: 420px;
+    color: #11a4fa;   
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #38b6ff; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    animation: 
+    typing 2.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 420px }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #1c1c1c; }
+}
+
+.hero-s-p {
+    width: 500px;
+    margin-bottom: 25px;
+}
+
+.hero-btns-container {
+    display: flex;
+}
+
+.hero-btns-container a {
+    width: 90px;
+    margin-right: 20px;
+}
+
+.hero-s-btn1 {
+    display: flex;
+    font-family: 'Outfit', sans-serif;
+    width: 90px;
+    height: 37px;
+    margin-right: 20px;
+    color: #1c1c1c;
+    font-size: calc(15rem/16);
+    background-color: transparent;
+    border: 1px solid #1c1c1c;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    transition: .5s;
+}
+
+.hero-s-btn1:hover {
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.hero-s-btn2 {
+    font-family: 'Outfit', sans-serif;
+    width: 130px;
+    height: 37px;
+    color: #2789c2;
+    font-size: calc(15rem/16);
+    cursor: pointer;
+    border-radius: 3px;
+    background: linear-gradient(to right, #1c1c1c 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    border: 1px solid #1c1c1c;
+    padding: 0;
+}
+
+.hero-s-btn2:hover {
+  background-position: left bottom;
+  color: white;
+}
