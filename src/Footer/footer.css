@@ -1,0 +1,135 @@
+footer {
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    background: black;
+    margin-top: -40px;
+}
+
+.footer-icons-container {
+    display: flex;
+}
+
+.vawe {
+    width: 1440px;
+    margin-top: -150px;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: -50px;
+    margin-left: -15px;
+}
+
+.icons-title {
+    color: #fff;
+    font-size: calc(19rem/16);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer-icons-line {
+    width: 150px;
+    height: 3px;
+    background-color: #36aff5;
+    margin-bottom: 65px;
+}
+
+.icons-container i {
+    color: #fff;
+    font-size: calc(30rem/16);
+    transition: .3s;
+}
+
+.icons-container i:hover {
+    color: #38b6ff;
+}
+
+.privacy {
+    font-size: calc(14.5rem/16);
+    margin-top: 140px;
+    color: #fff;
+}
+
+.footer-logo {
+    font-weight: 800;
+    font-size: calc(29rem/16);
+    margin-left: -20px;
+    background-color: black;
+    padding: 10px;
+    height: 60px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.footer-logo .craft-black {
+    color: #1c1c1c;
+    overflow: hidden;
+    background: linear-gradient(to right, #11a4fa, #11a4fa 50%, #fff 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 475ms ease;
+    text-decoration: none;
+    &:hover {
+      background-position: 0 100%;
+    }
+  }
+
+.footer-web-blue {
+    color: #11a4fa;
+}
+
+#email {
+    font-size: calc(30rem/16);
+    margin-top: -1px;   
+    margin-right: 30px;
+}
+
+#email:hover {
+    color: #E34133;
+}
+
+#phone {
+    font-size: calc(26rem/16);
+    margin-left: 25px;
+}
+
+#viber {
+    font-size: calc(28rem/16);
+    margin-top: 1px;
+}
+
+#viber:hover {
+    color: #793baa;
+}
+
+.icons-container {
+    margin-left: 0px;
+}
+
+#whatsapp:hover {
+    color: #1ad03f;
+}
+
+#insta:hover {
+    color: #CB2C8D;
+}
+
+#linkedin:hover {
+    color: #0073B1;
+}
+
+#facebook:hover {
+    color:#415E9B;
+}
+
+#insta2:hover {
+    color: #CB2C8D;
+}

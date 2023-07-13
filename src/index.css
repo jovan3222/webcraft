@@ -23,9 +23,10 @@ code {
 }
 
 html {
-  background-color: black;
+  background-color: white;
 }
 
 header {
-  height: 80px;
+  height: 70px;
+  background-color: white;
 }

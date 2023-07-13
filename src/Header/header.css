@@ -1,18 +1,19 @@
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 1440px;
-    height: 80px;
+    height: 70px;
     align-items: center;
-    border-bottom: 2px solid lightgray;
+    border-bottom: 1px solid lightgray;
     position: fixed;
     top: 0px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, .9);
+    z-index: 2;
 }
 
 .logo {
     font-weight: 800;
-    font-size: 29px;
+    font-size: calc(29rem/16);
     margin-left: 150px;
 }
 
@@ -38,8 +39,9 @@
 
 .navbar ul {
     display: flex;
+    align-items: center;
     list-style: none;
-    margin-right: 150px;
+    margin-right: 70px;
 }
 
 /* .navbar ul li {
@@ -61,13 +63,39 @@
   } */
 
 .navbar ul li {
-    font-size: 17px;
+    font-size: calc(18rem/16);
     font-weight: 500;
     margin: 0 20px 0 20px;
     transition: .3s;
 }
 
 .navbar ul li:hover {
-    color: #2789c2;
-    margin-top: -3px;
+    color: #11a4fa;
+    font-size: calc(18.5rem/16);
+}
+
+.work-with-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 40px;
+  background-color: #292929;
+  border-radius: 50px;
+  color: white;
+  margin-right: 130px;
+  transition: .5s;
+}
+
+.work-with-us:hover {
+  width: 200px;
+}
+
+#arrow .fa-solid, .fas {
+  display: flex;
+  font-size: calc(15rem/16);
+  color: white;
+  align-self: center;
+  margin-top: 32px;
+  margin-left: 9px;
 }

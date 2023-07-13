@@ -23,6 +23,10 @@ const texts = [
     },
     {
         text: 'Kontakt'
+    },
+    {
+        text: 'Radi sa nama',
+        class: 'work-with-us'
     }
 ]
 
@@ -46,20 +50,21 @@ const Header = () => {
         <header>
             <div className='navbar'>
                 <a className='logo' href='www.smartdevpreneur.com'><span className='web-blue'>{texts[0].text}</span> <span className='craft-black'>{texts[1].text}</span></a>
-                <div className='navbar-lines-container' 
+                <div className='navbar-lines-container'
                     onClick={() => expand()}
                 >
                     <div className='navbar-line line1' style={boolean === true ? {} : {transform:'rotate(45deg)', marginTop:'20px'}}></div>
                     <div className='navbar-line line2' style={boolean === true ? {} : {transform:'rotate(135deg)', marginTop:'-30px'}}></div>
                     <div className='navbar-line line3' style={boolean === true ? {} : {display:'none'}}></div>
                 </div>
-                <ul style={boolean === true ? {display:'none'} : {display:'flex'}}>
+                <ul style={boolean === true ? {opacity:'0'} : {opacity:'1'}}>
                     <li><a href="www.smartdevpreneur.com">{texts[2].text}</a></li>
                     <li><a href="www.smartdevpreneur.com">{texts[3].text}</a></li>
                     <li><a href="www.smartdevpreneur.com">{texts[4].text}</a></li>
                     <li><a href="www.smartdevpreneur.com">{texts[5].text}</a></li>
                     <li><a href="www.smartdevpreneur.com">{texts[6].text}</a></li>
                 </ul>
+                <a className={texts[7].class} href="www.smartdevpreneur.com" id="arrow">{texts[7].text}<i class="fa-solid fa-arrow-pointer"></i></a>
             </div>
         </header>
     )

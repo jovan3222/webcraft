@@ -1,20 +1,24 @@
 @media only screen and (max-width:480px) {
+    main {
+        height: 19500px;
+        background-color: white;
+    }
+
     .hero-section {
         display: flex;
         flex-direction: column;
         width: 1440px;
-        height: 2600px;
-        background: url('./img8.png');
+        height: 2500px;
+        background: url('./mobile-hero.png');
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: none;
     }
 
     .hero-info-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 420px 520px 0px 560px;
+        margin: 500px 520px 0px 560px;
     }
 
     .hero-s-h2 {
@@ -65,7 +69,7 @@
         }
 
         .hero-s-p {
-            width: 970px;
+            width: 1120px;
             margin: 50px 0 0px -50px;
             font-size: calc(75rem/16);
             text-align: center;
@@ -86,12 +90,12 @@
         .hero-s-btn1 {
             display: flex;
             font-family: 'Outfit', sans-serif;
-            background-color: white;
+            background-color: #1c1c1c;
             width: 470px;
             height: 140px;
             margin-left: 45px;
             margin-bottom: 70px;
-            color: #1c1c1c;
+            color: white;
             font-size: calc(68rem/16);
             border: 1px solid #1c1c1c;
             cursor: pointer;
@@ -100,6 +104,7 @@
             border-radius: 3px;
             transition: .5s;
             border-radius: 70px;
+            box-shadow: none;
         }
 
         .hero-s-btn2 {
@@ -107,7 +112,7 @@
             margin-left: -60px;
             width: 700px;
             height: 140px;
-            color: #2789c2;
+            color: #1c1c1c;
             font-size: calc(68rem/16);
             cursor: pointer;
             border-radius: 3px;
@@ -118,5 +123,393 @@
             border: 1px solid #1c1c1c;
             padding: 0;
             border-radius: 70px;
+            box-shadow: none;
+        }
+
+        .services-section {
+            display: flex;
+            flex-direction: column;
+            width: 1440px;
+            height: 5800px;
+            margin-top: 0px;
+            background-color: white;
+            background-image: url(./img-service-section-mobile.png);
+            margin-top: -5px;
+        }
+
+        .overall-services-container {
+            display: flex;
+            align-self: center;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        
+        #services-container {
+            width: 1300px;
+            height: 1500px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100px;
+            margin: 0 0px 150px 0px;
+        }
+
+        .services-section h6 {
+            display: flex;
+            align-self: center;
+            margin: 120px 0 230px 0;
+            font-size: calc(123rem/16);
+            color: white;
+            text-shadow: 10px 10px 40px #1c1c1c;
+        }
+
+        .service1 {
+            box-shadow: -20px 20px 80px 0px #b0b0b0;
+            border: 1px solid #b0b0b0;
+        }
+        
+        .service2 {
+            box-shadow: 20px -20px 80px 0px #b0b0b0;
+            border: 1px solid #b0b0b0;
+        }
+        
+        .service3 {
+            box-shadow: none;
+            border: none;
+        }
+        
+        .fa-solid,
+        .fas {
+            font-size: calc(285rem/16);
+            color: #11a4fa;
+            margin-bottom: 60px;
+        }
+        
+        .service-title1 {
+            font-size: calc(100rem/16);
+            font-weight: bold;
+            color: #1c1c1c;
+        }
+        
+        .service-title2 {
+            font-size: calc(100rem/16);
+            font-weight: bold;
+            color: #1c1c1c;
+        }
+        
+        .service-title3 {
+            font-size: calc(100rem/16);
+            font-weight: bold;
+            color: #1c1c1c;
+        }
+        
+        .service-description1 {
+            font-size: calc(70rem/16);
+            line-height: 1.4;
+            width: 80%;
+            margin-top: 45px;
+            margin-bottom: 25px;
+            color: #1c1c1c;
+        }
+        
+        .service-description2 {
+            font-size: calc(70rem/16);
+            line-height: 1.4;
+            width: 80%;
+            margin-top: 45px;
+            color: #1c1c1c;
+        }
+        
+        .service-description3 {
+            font-size: calc(70rem/16);
+            line-height: 1.4;
+            width: 80%;
+            margin-top: 45px;
+            color: #1c1c1c;
+        }
+
+        .why-us-section {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            height: 3200px;
+            background-color: lightblue;
+            background: url(why-us-section-mobile.png);
+            background-size: cover;
+            margin-top: -5px;
+        }
+        
+        .why-us-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 1200px;
+            height: 400px;
+            margin: 700px 0 0 0;
+        }
+
+        .why-us-img-container {
+            width: 1300px;
+            overflow: hidden;
+            margin-right: 0px;
+        }
+        
+        .why-us-img {
+            display: flex;
+            width: 1300px;
+            height: 1300px;
+            margin-right: 0px;
+            background: url(why-us-img.jpg);
+            background-size: cover;
+            border-radius: 100px;
+            box-shadow: none;
+            margin-top: 400px;
+        }
+        
+        .why-us-title {
+            font-size: calc(123rem/16);
+            margin-bottom: 7px;
+            font-weight: bold;
+            color: #1c1c1c;
+            margin: 0 0 100px 0;
+            overflow:visible;
+        }
+        
+        .why-us-text {
+            width: 1300px;
+            font-size: calc(70rem/16);
+            margin-bottom: 0px;
+            text-align: center;
+            color: #1c1c1c;
+            background-color: transparent;
+            border-radius: 100px;
+            line-height: 1.4;
+            padding: 10px;
+        }
+        
+        .why-us-decoration-line {
+            width: 110px;
+            height: 3px;
+            background-color: #11a4fa;
+            margin-bottom: 30px;
+        }
+
+        .testimonial-section {
+            display: flex;
+            flex-direction: column;
+            width: 1440px;
+            height: 5800px;
+            margin-top: 0px;
+            background-color: white;
+            background-image: url(./testimonial-section-mobile.png);
+            margin-top: -5px;
+        }
+
+        .overall-testimonial-container {
+            display: flex;
+            align-self: center;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        
+        #testimonial-container {
+            width: 1300px;
+            height: 1600px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100px;
+            margin: 0 0px 150px 0px;
+        }
+
+        .testimonial-section h6 {
+            display: flex;
+            align-self: center;
+            margin: 150px 0 230px 0;
+            font-size: calc(123rem/16);
+            color: #1c1c1c;
+            text-shadow: none;
+        }
+
+        .testimonial1 {
+            box-shadow: none;
+            border: 3px solid #b0b0b0;
+        }
+        
+        .testimonial2 {
+            box-shadow: none;
+            border: 3px solid #b0b0b0;
+        }
+        
+        .testimonial3 {
+            box-shadow: none;
+            border: 3px solid #b0b0b0;
+        }
+        
+        .fa-solid,
+        .fas {
+            font-size: calc(285rem/16);
+            color: #11a4fa;
+            margin-bottom: 60px;
+        }
+        
+        .testimonial-title1 {
+            font-size: calc(100rem/16);
+            font-weight: bold;
+            color: #1c1c1c;
+        }
+        
+        .testimonial-title2 {
+            font-size: calc(100rem/16);
+            font-weight: bold;
+            color: #1c1c1c;
+        }
+        
+        .testimonial-title3 {
+            font-size: calc(100rem/16);
+            font-weight: bold;
+            color: #1c1c1c;
+        }
+        
+        .testimonial-description1 {
+            font-size: calc(70rem/16);
+            line-height: 1.4;
+            width: 80%;
+            margin-top: 45px;
+            margin-bottom: 25px;
+            color: #1c1c1c;
+        }
+        
+        .testimonial-description2 {
+            font-size: calc(70rem/16);
+            line-height: 1.4;
+            width: 80%;
+            margin-top: 45px;
+            color: #1c1c1c;
+        }
+        
+        .testimonial-description3 {
+            font-size: calc(70rem/16);
+            line-height: 1.4;
+            width: 80%;
+            margin-top: 45px;
+            color: #1c1c1c;
+        }
+
+        .stars i {
+            margin-top: 60px;
+            margin-bottom: 25px;
+            font-size: calc(70rem/16);
+            color: #ffd006;
+        }
+
+        .blue-line {
+            display: flex;
+            align-self: center;
+            margin-top: -185px;
+            margin-bottom: 185px;
+            width: 320px;
+            height: 14px;
+            background-color: white;
+        }
+
+        .blue-line2 {
+            display: flex;
+            align-self: center;
+            margin-top: -190px;
+            margin-bottom: 180px;
+            width: 600px;
+            height: 15px;
+            background-color: #38b6ff;  
+        }
+
+        .kontakt-section {
+            display: flex;
+            width: 1440px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 2000px;
+            background: url(./kontakt-section-mobile.png);
+            background-size: cover;
+            margin-top: -2px;
+        }
+        
+        .kontakt-title {
+            font-size: calc(230rem/16);
+            margin: 170px 0 -40px 75px;
+            align-self: flex-start;
+            z-index: 1;
+        }
+        
+        .kontant-content-container {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .kontakt-content {
+            width: 1300px;
+            height: 1300px;
+            background-color: #36aff5;
+            margin-top: -40px;
+            border-radius: 30px;
+        }
+        
+        .kontakt-img {
+            display: none;
+            width: 650px;
+            height: 500px;
+            background: url(home-kontakt.jpg);
+            background-size: cover;
+            border-radius: 0 30px 30px 0;   
+        }
+        
+        .content-title {
+            font-size: calc(100rem/16);
+            width: 1200px;
+            margin: 150px 0 120px 50px;
+            color: #1c1c1c;
+        }
+        
+        .content-gmail {
+            font-size: calc(90rem/16);
+            width: 300px;
+            margin: 110px 0 0 50px;
+            color: white;
+            transition: .3s;
+        }
+        
+        .content-gmail:hover {
+            color: black;
+        }
+        
+        .app-icons-title {
+            font-size: calc(50rem/16);
+            width: 1200px;
+            margin: 180px 0 50px 50px;
+            color: #1c1c1c;
+        }
+        
+        .app-icons {
+            display: flex;
+            margin: 20px 0 0 50px;
+        }
+        
+        .app-icons i {
+            font-size: calc(70rem/16);
+            color: #1c1c1c;
+            margin: 0 30px 0 0;
+            transition: .2s;
+        }
+        
+        .app-icons i:hover {
+            color: #30898d;
+            font-size: calc(28rem/16);
         }
 }

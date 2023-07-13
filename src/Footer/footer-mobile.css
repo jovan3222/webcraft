@@ -1,0 +1,130 @@
+@media only screen and (max-width:480px) {
+    footer {
+        width: 1440px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 2100px;
+        background: black;
+        margin-top: -50px;
+    }
+    
+    .footer-icons-container {
+        display: flex;
+    }
+
+    #icons-2-container {
+        margin-bottom: 120px;
+        margin-top: 50px;
+    }
+    
+    .vawe {
+        width: 1440px;
+        margin-top: -150px;
+    }
+    
+    .icons-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .icons-title {
+        color: #fff;
+        font-size: calc(80rem/16);
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    .footer-icons-line {
+        align-self: center;
+        width: 500px;
+        height: 5px;
+        background-color: #36aff5;
+        margin-bottom: 50px;
+    }
+
+    #line2 {
+        margin-left: 60px;
+    }
+
+    .icons-container {
+        display: flex;
+        color: #fff;
+        font-size: calc(30rem/16);
+        transition: .3s;
+        margin-bottom: 0px;
+    }
+    
+    .icons-container i {
+        color: #fff;
+        font-size: calc(100rem/16);
+        transition: .3s;
+    }
+    
+    .icons-container i:hover {
+        color: #38b6ff;
+    }
+    
+    .privacy {
+        font-size: calc(40rem/16);
+        margin-top: 100px;
+        color: #fff;
+    }
+
+    .footer-logo {
+        font-weight: 800;
+        font-size: calc(102rem/16);
+        margin-left: -20px;
+        margin-bottom: 350px;
+        background-color: black;
+        padding: 10px;
+        height: 60px;
+        margin-top: 15px;
+        border-radius: 5px;
+    }
+    
+    .footer-logo .craft-black {
+        color: #1c1c1c;
+        overflow: hidden;
+        background: linear-gradient(to right, #11a4fa, #11a4fa 50%, #fff 50%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% 100%;
+        background-position: 100%;
+        transition: background-position 475ms ease;
+        text-decoration: none;
+        &:hover {
+          background-position: 0 100%;
+        }
+      }
+    
+    .footer-web-blue {
+        color: #11a4fa;
+    }
+
+    .my-cont {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 200px;
+    }
+    
+    #email {
+        font-size: calc(110rem/16);
+        margin-top: -55px;
+        margin-right: 140px;
+    }
+    
+    #phone {
+        font-size: calc(90rem/16);
+        margin-left: 140px;
+    }
+
+    #viber {
+        font-size: calc(100rem/16);
+    }
+}
