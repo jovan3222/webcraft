@@ -24,7 +24,7 @@
 .craft-black {
     color: #1c1c1c;
     overflow: hidden;
-    background: linear-gradient(to right, #11a4fa, #11a4fa 50%, #1c1c1c 50%);
+    background: linear-gradient(to right, #11a4fa, #11a4fa 49%, #1c1c1c 50%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -70,8 +70,13 @@
 }
 
 .navbar ul li:hover {
+  color: #11a4fa;
+  transform: scale(1.02);
+}
+
+.true {
     color: #11a4fa;
-    font-size: calc(18.5rem/16);
+    /* font-size: calc(18.5rem/16); */
 }
 
 .work-with-us {
@@ -80,15 +85,15 @@
   align-items: center;
   width: 170px;
   height: 40px;
-  background-color: #292929;
+  background-color: #3b3b3b;
   border-radius: 50px;
   color: white;
   margin-right: 130px;
-  transition: .5s;
+  transition: .3s;
 }
 
 .work-with-us:hover {
-  width: 200px;
+  background-color: black;
 }
 
 #arrow .fa-solid, .fas {
@@ -98,4 +103,8 @@
   align-self: center;
   margin-top: 32px;
   margin-left: 9px;
+}
+
+.work-with-us:hover #arrow  {
+  color: #292929;
 }

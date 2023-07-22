@@ -443,7 +443,7 @@
         
         .kontakt-title {
             font-size: calc(230rem/16);
-            margin: 170px 0 -40px 75px;
+            margin: 170px 0 -20px 75px;
             align-self: flex-start;
             z-index: 1;
         }

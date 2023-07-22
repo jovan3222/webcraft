@@ -2,26 +2,26 @@ import React from 'react';
 import './footer.css';
 import './footer-mobile.css';
 
-const appIcons = [
-    {
-        title: 'Zapratite nas:',
-        icon1: 'fa-brands fa-instagram',
-        icon2: 'fa-brands fa-square-facebook',
-        icon3: 'fa-brands fa-linkedin'
-    },
-    {
-        title: 'Kontaktirajte nas:',
-        icon1: 'fa-brands fa-instagram',
-        icon2: 'fa-brands fa-square-facebook',
-        icon3: 'fa-brands fa-linkedin'
-    },
-    {
-        title: 'Pišite nam:',
-        icon1: 'fa-brands fa-instagram',
-        icon2: 'fa-brands fa-square-facebook',
-        icon3: 'fa-brands fa-linkedin'
-    }
-]
+// const appIcons = [
+//     {
+//         title: 'Zapratite nas:',
+//         icon1: 'fa-brands fa-instagram',
+//         icon2: 'fa-brands fa-square-facebook',
+//         icon3: 'fa-brands fa-linkedin'
+//     },
+//     {
+//         title: 'Kontaktirajte nas:',
+//         icon1: 'fa-brands fa-instagram',
+//         icon2: 'fa-brands fa-square-facebook',
+//         icon3: 'fa-brands fa-linkedin'
+//     },
+//     {
+//         title: 'Pišite nam:',
+//         icon1: 'fa-brands fa-instagram',
+//         icon2: 'fa-brands fa-square-facebook',
+//         icon3: 'fa-brands fa-linkedin'
+//     }
+// ]
 
 const Footer = () => (
     <>
@@ -31,32 +31,32 @@ const Footer = () => (
         <footer>
             <div className='icons-container'>
                 <a className='footer-logo' href='www.smartdevpreneur.com'><span className='footer-web-blue'>WEB</span> <span className='craft-black'>CRAFT</span></a>
-                    <div className='all-icons-container'>
-                        <p className='icons-title'>Zapratite nas:</p>
-                        <div className='footer-icons-line'></div>
-                        <div className='icons-container my-cont'>
-                            <a href="www.google.com"><i class='fa-brands fa-instagram' id="insta2"></i></a>
-                            <a href="www.google.com"><i class='fa-brands fa-square-facebook' id="facebook"></i></a>
-                            <a href="www.google.com"><i class='fa-brands fa-linkedin' id="linkedin"></i></a>
-                        </div>
+                <div className='all-icons-container'>
+                    <p className='icons-title'>Zapratite nas:</p>
+                    <div className='footer-icons-line'></div>
+                    <div className='icons-container my-cont'>
+                        <a href="https://www.instagram.com/webcraft.me/"><i class='fa-brands fa-instagram' id="insta2"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100094819901333"><i class='fa-brands fa-square-facebook' id="facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/web-craft-780b93283/"><i class='fa-brands fa-linkedin' id="linkedin"></i></a>
                     </div>
-                    <div>
-                        <p className='icons-title'>Kontaktirajte nas:</p>
-                        <div className='footer-icons-line' id="line2"></div>
-                        <div className='icons-container my-cont' id="icons-2-container">
-                            <a href="www.google.com"><i class="fa-solid fa-phone" id="phone"></i></a>
-                            <a href="www.google.com"><i class="fa-regular fa-envelope" id="email"></i></a>
-                        </div>
+                </div>
+                <div>
+                    <p className='icons-title'>Kontaktirajte nas:</p>
+                    <div className='footer-icons-line' id="line2"></div>
+                    <div className='icons-container my-cont' id="icons-2-container">
+                        <a href="tel:067-941-855"><i class="fa-solid fa-phone" id="phone"></i></a>
+                        <a href="mailto: web.craft.me@gmail.com"><i class="fa-regular fa-envelope" id="email"></i></a>
                     </div>
-                    <div>
-                        <p className='icons-title'>Pišite nam:</p>
-                        <div className='footer-icons-line'></div>
-                        <div className='icons-container my-cont'>
-                            <a href="www.google.com"><i class="fa-brands fa-whatsapp" id="whatsapp"></i></a>
-                            <a href="www.google.com"><i class="fa-brands fa-viber" id="viber"></i></a>
-                            <a href="www.google.com"><i class='fa-brands fa-instagram' id="insta"></i></a>
-                        </div>
+                </div>
+                <div>
+                    <p className='icons-title'>Pišite nam:</p>
+                    <div className='footer-icons-line'></div>
+                    <div className='icons-container my-cont'>
+                        <a href="www.google.com"><i class="fa-brands fa-whatsapp" id="whatsapp"></i></a>
+                        <a href="viber:067-941-855"><i class="fa-brands fa-viber" id="viber"></i></a>
+                        <a href="https://www.instagram.com/webcraft.me/"><i class='fa-brands fa-instagram' id="insta"></i></a>
                     </div>
+                </div>
             </div>
             <p className='privacy'>
                 Copyright Web Craft 2023. - All Rights Reserved

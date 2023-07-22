@@ -1,6 +1,8 @@
 import React from 'react';
 import './header.css';
 import './mobile-header.css';
+import { Link } from "react-router-dom";
+import { Location } from 'react-router-dom';
 
 const texts = [
     {
@@ -49,24 +51,24 @@ const Header = () => {
     return (
         <header>
             <div className='navbar'>
-                <a className='logo' href='www.smartdevpreneur.com'><span className='web-blue'>{texts[0].text}</span> <span className='craft-black'>{texts[1].text}</span></a>
+                <a className='logo'><span className='web-blue'><Link to="/">{texts[0].text}</Link></span> <span className='craft-black'><Link to="/">{texts[1].text}</Link></span></a>
                 <div className='navbar-lines-container'
                     onClick={() => expand()}
                 >
-                    <div className='navbar-line line1' style={boolean === true ? {} : {transform:'rotate(45deg)', marginTop:'20px'}}></div>
-                    <div className='navbar-line line2' style={boolean === true ? {} : {transform:'rotate(135deg)', marginTop:'-30px'}}></div>
-                    <div className='navbar-line line3' style={boolean === true ? {} : {display:'none'}}></div>
+                    <div className='navbar-line line1' style={boolean === true ? {} : { transform: 'rotate(45deg)', marginTop: '20px' }}></div>
+                    <div className='navbar-line line2' style={boolean === true ? {} : { transform: 'rotate(135deg)', marginTop: '-30px' }}></div>
+                    <div className='navbar-line line3' style={boolean === true ? {} : { display: 'none' }}></div>
                 </div>
-                <ul style={boolean === true ? {opacity:'0'} : {opacity:'1'}}>
-                    <li><a href="www.smartdevpreneur.com">{texts[2].text}</a></li>
-                    <li><a href="www.smartdevpreneur.com">{texts[3].text}</a></li>
-                    <li><a href="www.smartdevpreneur.com">{texts[4].text}</a></li>
-                    <li><a href="www.smartdevpreneur.com">{texts[5].text}</a></li>
-                    <li><a href="www.smartdevpreneur.com">{texts[6].text}</a></li>
+                <ul style={boolean === true ? { opacity: '0', marginLeft: '-2000px' } : { opacity: '1' }}>
+                    <li className={`${window.location.pathname === '/'}`}><Link to="/">{texts[2].text}</Link></li>
+                    <li className={`${window.location.pathname === '/usluge'}`}><Link to="/usluge">{texts[3].text}</Link></li>
+                    {/* <li><a href="www.smartdevpreneur.com">{texts[4].text}</a></li> */}
+                    <li className={`${window.location.pathname === '/o-nama'}`}><Link to="/o-nama">{texts[5].text}</Link></li>
+                    <li className={`${window.location.pathname === '/kontakt'}`}><Link to="/kontakt">{texts[6].text}</Link></li>
                 </ul>
-                <a className={texts[7].class} href="www.smartdevpreneur.com" id="arrow">{texts[7].text}<i class="fa-solid fa-arrow-pointer"></i></a>
-            </div>
-        </header>
+                <a className={texts[7].class} href="mailto: web.craft.me@gmail.com" id="arrow">{texts[7].text}<i class="fa-solid fa-arrow-pointer"></i></a>
+            </div >
+        </header >
     )
 }
 

@@ -5,6 +5,7 @@
       padding: 0;
       justify-content: space-between;
       border-bottom: 2px solid gray;
+      z-index: 100;
     }
 
     header {
@@ -29,7 +30,8 @@
     .navbar ul {
         position: fixed;
         flex-direction: column;
-        margin: 1050px 0 0 0px;
+        /* margin: 1048px 0 0 0px; FOR ONE MORE LINK */
+        margin: 882px 0 0 0px;
         width: 100%;
         padding: 0;
         background-color: white;
@@ -47,6 +49,12 @@
         text-align: center;
         border-bottom: 2px solid lightgrey;
         color: #1c1c1c;
+    }
+
+    .navbar ul li:hover {
+        color: #11a4fa;
+        transform: none;
+        /* font-size: calc(18.5rem/16); */
     }
 
     .logo {

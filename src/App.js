@@ -1,16 +1,22 @@
-import './App.css';
-import Header from './Header/header.js'
-import Main from './Main/main.js'
-import Footer from './Footer/footer.js'
+import Pocetna from './pocetna.js';
+import Usluge from './pages/usluge/usluge.js';
+import Onama from './pages/o-nama/o-nama.js';
+import Kontakt from './pages/kontakt/kontakt.js';
+import ScrollToTop from './components/ScrollToTop';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
-  return (
-    <>
-      <Header />
-      <Main />
-      <Footer />
-    </>
-  );
+    return (
+        <>
+            <ScrollToTop />
+            <Routes>
+                <Route path='/' element={<Pocetna />} />
+                <Route path='/usluge' element={<Usluge />} />
+                <Route path='/o-nama' element={<Onama />} />
+                <Route path='/kontakt' element={<Kontakt />} />
+            </Routes>
+        </>
+    );
 }
 
 export default App;
